@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "name": "codeigniter4/appstarter",
     "description": "CodeIgniter4 starter app",
     "license": "MIT",
@@ -22,22 +23,47 @@
         "psr-4": {
             "App\\": "app/",
             "Config\\": "app/Config/"
+=======
+    "name": "your-name/rolodex-importer",
+    "description": "CodeIgniter 4 CLI command for importing Rolodex contacts to CSV",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "codeigniter4/framework": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+>>>>>>> 65ca98b76f2c1281e66f6b1d1780d44488968174
         },
         "exclude-from-classmap": [
             "**/Database/Migrations/**"
         ]
     },
+<<<<<<< HEAD
     "autoload-dev": {
         "psr-4": {
             "Tests\\Support\\": "tests/_support"
         }
     },
+=======
+>>>>>>> 65ca98b76f2c1281e66f6b1d1780d44488968174
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
         "sort-packages": true
     },
     "scripts": {
+<<<<<<< HEAD
         "test": "phpunit"
     }
+=======
+        "post-update-cmd": [
+            "@php spark cache:clear"
+        ]
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+>>>>>>> 65ca98b76f2c1281e66f6b1d1780d44488968174
 }

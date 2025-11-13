@@ -2,6 +2,7 @@
 
 namespace Config;
 
+<<<<<<< HEAD
 use CodeIgniter\Modules\Modules as BaseModules;
 
 /**
@@ -79,4 +80,61 @@ class Modules extends BaseModules
         'routes',
         'services',
     ];
+=======
+/**
+ * --------------------------------------------------------------------
+ * Modules Configuration
+ * --------------------------------------------------------------------
+ *
+ * This file defines the namespaces and locations of the modules
+ * that are used by the application.
+ */
+class Modules
+{
+    /**
+     * -------------------------------------------------------------------
+     * Auto-Discover
+     * -------------------------------------------------------------------
+     *
+     * If true, the system will automatically discover and load
+     * all modules in the specified directories.
+     */
+    public $autoDiscover = true;
+
+    /**
+     * -------------------------------------------------------------------
+     * Auto-Discover Paths
+     * -------------------------------------------------------------------
+     *
+     * The paths to search for modules when auto-discovering.
+     */
+    public $autoDiscoverPaths = [
+        APPPATH . 'Modules',
+        ROOTPATH . 'Modules',
+    ];
+
+    /**
+     * -------------------------------------------------------------------
+     * Modules
+     * -------------------------------------------------------------------
+     *
+     * The modules that are loaded by the application.
+     * The key is the module name and the value is the path to the module.
+     */
+    public $modules = [];
+
+    /**
+     * -------------------------------------------------------------------
+     * Should Discover
+     * -------------------------------------------------------------------
+     *
+     * Returns whether the system should auto-discover modules.
+     *
+     * @return bool
+     */
+    public function shouldDiscover(): bool
+    {
+        return $this->autoDiscover;
+    }
+>>>>>>> 65ca98b76f2c1281e66f6b1d1780d44488968174
 }
